@@ -73,6 +73,7 @@
             let signInFormOBJ = JSON.stringify(signInForm);
             console.log('signInFormOBJ == ',signInFormOBJ)
             $.ajax({
+                async: false,
                 url: 'https://c05-jwt-ajax.herokuapp.com/signin',
                 method: 'POST',
                 data: signInFormOBJ,
